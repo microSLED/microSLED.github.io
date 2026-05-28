@@ -1,1 +1,1 @@
-# micro-sled.github.io
+# microSLED.github.io
