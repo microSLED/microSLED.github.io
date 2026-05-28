@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">μSLED profile emblem</title>
+  <desc id="desc">A circular high-tech emblem for μSLED — Microelectronics System-LEvel Design.</desc>
+  <defs>
+    <radialGradient id="space" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#203f64"/>
+      <stop offset="38%" stop-color="#0d1a34"/>
+      <stop offset="74%" stop-color="#071022"/>
+      <stop offset="100%" stop-color="#02040b"/>
+    </radialGradient>
+    <radialGradient id="aura" cx="48%" cy="44%" r="58%">
+      <stop offset="0%" stop-color="#67dcff" stop-opacity="0.34"/>
+      <stop offset="46%" stop-color="#5577ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringA" x1="134" y1="120" x2="882" y2="904" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74e5ff"/>
+      <stop offset="0.34" stop-color="#5f82ff"/>
+      <stop offset="0.64" stop-color="#a88cff"/>
+      <stop offset="0.82" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#74e5ff"/>
+    </linearGradient>
+    <linearGradient id="goldBlue" x1="210" y1="300" x2="806" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="0.32" stop-color="#d4f5ff"/>
+      <stop offset="0.68" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="chipFill" x1="330" y1="310" x2="700" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c223d"/>
+      <stop offset="1" stop-color="#030916"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.40 0 0 0 0 0.86 0 0 0 0 1.00 0 0 0 .85 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+    <clipPath id="disc"><circle cx="512" cy="512" r="456"/></clipPath>
+  </defs>
+
+  <circle cx="512" cy="512" r="472" fill="#02040b"/>
+  <circle cx="512" cy="512" r="456" fill="url(#space)" filter="url(#shadow)"/>
+  <circle cx="512" cy="512" r="456" fill="url(#aura)"/>
+
+  <g clip-path="url(#disc)" opacity=".55">
+    <path d="M70 725 H954" stroke="#67dcff" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M70 300 H954 M70 390 H954 M70 585 H954" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
+    <path d="M170 90 V920 M310 80 V940 M512 60 V960 M714 80 V940 M854 90 V920" stroke="#ffffff" stroke-opacity=".055" stroke-width="2"/>
+    <path d="M128 690 L224 630 L315 665 L420 595 L524 648 L650 565 L760 610 L900 535" fill="none" stroke="#67dcff" stroke-opacity=".20" stroke-width="4"/>
+    <path d="M0 760 C160 700 260 830 430 750 C600 670 750 760 1024 650 V1024 H0 Z" fill="#020814" fill-opacity=".55"/>
+  </g>
+
+  <circle cx="512" cy="512" r="446" fill="none" stroke="url(#ringA)" stroke-width="22"/>
+  <circle cx="512" cy="512" r="404" fill="none" stroke="#ffffff" stroke-opacity=".17" stroke-width="3"/>
+  <circle cx="512" cy="512" r="350" fill="none" stroke="#67dcff" stroke-opacity=".30" stroke-width="5"/>
+  <circle cx="512" cy="512" r="288" fill="none" stroke="#ffd166" stroke-opacity=".38" stroke-width="4" stroke-dasharray="22 18"/>
+  <circle cx="512" cy="512" r="225" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+
+  <g filter="url(#glowCyan)" opacity=".88">
+    <path d="M146 430 H292 M732 430 H878 M146 555 H305 M719 555 H878" stroke="#67dcff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M512 130 V276 M512 748 V894" stroke="#67dcff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M232 248 H348 V342 M792 248 H676 V342 M232 774 H348 V686 M792 774 H676 V686" stroke="#ffd166" stroke-opacity=".70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="232" cy="248" r="15" fill="#67dcff"/>
+    <circle cx="792" cy="248" r="15" fill="#67dcff"/>
+    <circle cx="232" cy="774" r="15" fill="#ffd166"/>
+    <circle cx="792" cy="774" r="15" fill="#ffd166"/>
+  </g>
+
+  <g>
+    <rect x="332" y="315" width="360" height="336" rx="50" fill="url(#chipFill)" stroke="#ffffff" stroke-opacity=".30" stroke-width="5"/>
+    <rect x="364" y="346" width="296" height="274" rx="34" fill="#061324" stroke="#67dcff" stroke-opacity=".22" stroke-width="3"/>
+    <g stroke="#67dcff" stroke-opacity=".38" stroke-width="5" stroke-linecap="round">
+      <path d="M332 385 H286 M332 435 H286 M332 485 H286 M332 535 H286 M332 585 H286"/>
+      <path d="M692 385 H738 M692 435 H738 M692 485 H738 M692 535 H738 M692 585 H738"/>
+    </g>
+    <g stroke="#ffd166" stroke-opacity=".36" stroke-width="5" stroke-linecap="round">
+      <path d="M392 315 V268 M452 315 V268 M512 315 V268 M572 315 V268 M632 315 V268"/>
+      <path d="M392 651 V696 M452 651 V696 M512 651 V696 M572 651 V696 M632 651 V696"/>
+    </g>
+  </g>
+
+  <text x="512" y="488" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="150" font-weight="900" letter-spacing="-12" fill="url(#goldBlue)">μSLED</text>
+  <text x="512" y="558" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="780" letter-spacing="2.8" fill="#d7f4ff">System-LEvel Design</text>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="32" font-weight="850" letter-spacing="2" filter="url(#glowCyan)">
+    <text x="217" y="190" fill="#e7fbff">HLS</text>
+    <text x="715" y="190" fill="#e7fbff">RTL</text>
+    <text x="186" y="850" fill="#ffd166">HW/SW</text>
+    <text x="720" y="850" fill="#ffd166">SoC</text>
+  </g>
+
+  <path d="M205 650 C254 650 262 595 309 595 C364 595 360 695 416 695 C470 695 467 620 522 620 C575 620 577 671 629 671 C682 671 684 616 736 616 C782 616 804 642 842 642" fill="none" stroke="#67dcff" stroke-width="9" stroke-linecap="round" opacity=".86"/>
+  <path d="M205 681 C254 681 262 626 309 626 C364 626 360 726 416 726 C470 726 467 651 522 651 C575 651 577 702 629 702 C682 702 684 647 736 647 C782 647 804 673 842 673" fill="none" stroke="#ffd166" stroke-width="4" stroke-linecap="round" opacity=".76"/>
+
+  <g opacity=".65">
+    <path d="M330 778 H695" stroke="#ffffff" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M372 806 H654" stroke="#67dcff" stroke-opacity=".22" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
