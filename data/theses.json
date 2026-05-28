@@ -1,0 +1,46 @@
+[
+  {
+    "id": "wavision-vna-control-pipeline",
+    "title": "Hardware/software co-design of a VNA control pipeline",
+    "status": "Draft / open",
+    "tags": ["HW/SW", "FPGA", "Measurement", "Python"],
+    "summary": "Design and prototype a modular control and data-acquisition pipeline for the Wavision VNA platform.",
+    "prerequisites": "Digital design, Python or C/C++, basic FPGA knowledge.",
+    "outcomes": "Working prototype, documented architecture, measurements, thesis report.",
+    "supervisor": "Prof. Mario R. Casu",
+    "contact": "mario.casu@polito.it"
+  },
+  {
+    "id": "hls-custom-accelerators",
+    "title": "High-Level Synthesis exploration for custom accelerators",
+    "status": "Draft / open",
+    "tags": ["HLS", "C/C++", "FPGA", "Design space"],
+    "summary": "Study HLS design-space exploration techniques for compute kernels and compare architectural choices.",
+    "prerequisites": "C/C++, computer architecture, interest in digital implementation.",
+    "outcomes": "Reusable HLS experiments, benchmark results, design guidelines.",
+    "supervisor": "Prof. Mario R. Casu",
+    "contact": "mario.casu@polito.it"
+  },
+  {
+    "id": "soc-communication-memory-modeling",
+    "title": "System-level modeling of SoC communication and memory effects",
+    "status": "Draft / open",
+    "tags": ["SoC", "System modeling", "Memory", "Architecture"],
+    "summary": "Build executable models to evaluate communication, buffering, and memory organization before RTL implementation.",
+    "prerequisites": "Computer architecture, C/C++ or Python, basic embedded systems.",
+    "outcomes": "Modeling framework, case studies, architectural analysis.",
+    "supervisor": "Prof. Mario R. Casu",
+    "contact": "mario.casu@polito.it"
+  },
+  {
+    "id": "rtl-configurable-block-verification",
+    "title": "RTL prototyping and verification of a configurable digital block",
+    "status": "Draft / open",
+    "tags": ["RTL", "SystemVerilog", "Verification", "FPGA"],
+    "summary": "Design, implement, and verify a reusable RTL block for a larger experimental platform.",
+    "prerequisites": "Digital systems, HDL basics, willingness to learn verification practices.",
+    "outcomes": "RTL module, tests, synthesis results, integration notes.",
+    "supervisor": "Prof. Mario R. Casu",
+    "contact": "mario.casu@polito.it"
+  }
+]
