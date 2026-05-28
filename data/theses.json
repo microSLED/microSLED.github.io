@@ -8,7 +8,8 @@
     "prerequisites": "Digital design, Python or C/C++, basic FPGA knowledge.",
     "outcomes": "Working prototype, documented architecture, measurements, thesis report.",
     "supervisor": "Prof. Mario R. Casu",
-    "contact": "mario.casu@polito.it"
+    "contact": "mario.casu@polito.it",
+    "detailsUrl": "theses/wavision-vna-control-pipeline.html"
   },
   {
     "id": "hls-custom-accelerators",

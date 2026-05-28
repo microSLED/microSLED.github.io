@@ -10,6 +10,9 @@ async function loadTheses() {
     container.innerHTML = theses.map((thesis) => {
       const tags = (thesis.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('');
       const contact = thesis.contact || 'mario.casu@polito.it';
+      const details = thesis.detailsUrl
+        ? `<a class="button" href="${escapeAttribute(thesis.detailsUrl)}">More details</a>`
+        : '';
       return `
         <article class="proposal" id="${escapeHtml(thesis.id || '')}">
           <span class="status">${escapeHtml(thesis.status || 'Open')}</span>
@@ -19,9 +22,10 @@ async function loadTheses() {
           <div class="meta">
             <div><strong>Prerequisites</strong><span>${escapeHtml(thesis.prerequisites || 'To be defined with the supervisor.')}</span></div>
             <div><strong>Expected outcomes</strong><span>${escapeHtml(thesis.outcomes || 'To be defined with the supervisor.')}</span></div>
-            <div><strong>Supervisor</strong><span>${escapeHtml(thesis.supervisor || 'μSLED')}</span></div>
-            <div><strong>Contact</strong><span><a href="mailto:${escapeAttribute(contact)}?subject=${encodeURIComponent('Master thesis proposal: ' + (thesis.title || 'μSLED'))}">${escapeHtml(contact)}</a></span></div>
+            <div><strong>Supervisor</strong><span>${escapeHtml(thesis.supervisor || 'microSLED')}</span></div>
+            <div><strong>Contact</strong><span><a href="mailto:${escapeAttribute(contact)}?subject=${encodeURIComponent('Master thesis proposal: ' + (thesis.title || 'microSLED'))}">${escapeHtml(contact)}</a></span></div>
           </div>
+          ${details}
         </article>`;
     }).join('');
   } catch (error) {
